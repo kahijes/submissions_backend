@@ -10,7 +10,7 @@ morgan.token('postxd', function (req, res) {return JSON.stringify(req.body)})
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms :postxd'))
 
 let phonebook = [
-    {id: 1,
+    {id: xdd,
     name: "Arto Hellas",
     number: "040-123"
     }
@@ -31,7 +31,7 @@ app.get('/api/persons/:id', (request, response) => {
 })
 
 app.delete('/api/persons/:id',  (request, response) => {
-    const id = Number(request.params.id)
+    const id = request.params.id
     phonebook = phonebook.filter(entry => entry.id !== id)
 
     response.status(204).end()
