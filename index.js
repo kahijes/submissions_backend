@@ -10,7 +10,7 @@ morgan.token('postxd', function (req, res) {return JSON.stringify(req.body)})
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms :postxd'))
 
 let phonebook = [
-    {id: xdd,
+    {id: "xdd",
     name: "Arto Hellas",
     number: "040-123"
     }
