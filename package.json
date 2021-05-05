@@ -9,7 +9,7 @@
     "dev": "nodemon index.js",
     "build:ui": "rm -rf build && cd ../submissions/part2/phonebook && npm run build --prod && cp -r build /home/jesse/submissions_backend/",
     "deploy": "git push heroku main",
-    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push && npm run deploy",    
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push && npm run deploy",
     "logs:prod": "heroku logs --tail"
   },
   "repository": {
@@ -21,7 +21,9 @@
   "homepage": "https://github.com/kahijes/submissions_backend#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^8.6.0",
     "express": "^4.17.1",
+    "mongoose": "^5.12.7",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
