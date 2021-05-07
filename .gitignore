@@ -1,3 +1,5 @@
 node_modules/
 requests/
 .env
+/package-lock.json
+../package-lock.json
