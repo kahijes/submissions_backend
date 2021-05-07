@@ -14,6 +14,7 @@ const phonebookSchema = new mongoose.Schema({
     number: String
 })
 
+
 const Entry = mongoose.model('Entry', phonebookSchema)
 
 
